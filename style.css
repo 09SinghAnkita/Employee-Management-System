@@ -1,0 +1,99 @@
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #d3d2be;
+}
+
+:root {
+    --bg : #dcca90;
+    --bg-hover : rgb(123, 112, 73);
+    --bg-model : rgba(169, 165, 152, 0.752);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 5%;
+    align-items: center;
+}
+
+nav>button{
+    border-radius: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: var(--bg);
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    font-weight: 300;
+
+}
+
+nav>button:hover {
+    background-color: var(--bg-hover);
+}
+
+article{
+    display: flex;
+    justify-content: space-between ;
+    padding: 5% 5%;
+    height: 57vh;
+   
+}
+article>h4{
+    align-items: center;
+}
+
+aside{
+    border: 2px solid black; 
+}
+
+.employeeList, .employeeDetails {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    width: 25%;
+    object-fit: fill;
+}
+
+.selected{
+    background-color: var(--bg-hover);
+}
+
+.employeeList>span:hover {
+    background-color: var(--bg-hover);  
+}
+
+.addEmployee{
+    position: absolute; /* to come on the top */
+    width:100%;
+    height: 100%;
+    display: none; /* to make model not visible */
+    top: 0%;
+    left: 0%;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-model) ;
+}
+
+.employeeForm{
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    gap: 10px;
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 5%;
+   box-shadow: 0 0 30px rgb(202, 190, 121);
+   text-align: center;
+}
+
+/* to remove the arrow from salary */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}

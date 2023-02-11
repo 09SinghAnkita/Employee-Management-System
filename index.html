@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+<body>
+   <nav>
+    <h2> Employee Management System</h2>
+    <button class="addButton"> Add Employee </button>
+   </nav>
+   
+<article>
+    <aside style="width:35%;">
+      <h4>Employee List</h4>
+      <section class="employeeList"></section>
+    </aside>
+  
+    <aside style="width: 62%;">
+        <h4>Employee Details</h4>
+        <section class="employeeDetails">
+
+        </section>
+    </aside>
+</article>
+
+<div class="addEmployee">
+    <form class="employeeForm">
+      Add a new Employee
+      <div>
+        <input type="text" name="firstName" placeholder="First Name" required/>
+        <input type="text" name="lastName" placeholder="Last Name" required/>
+      </div>
+      <input type="text" name="imageUrl" placeholder="Image URL (Optional)" />
+      <input type="email" name="email" placeholder="Email" required/>
+      <input type="number" name="contactNumber" placeholder="Contact" required/>
+      <input type="number" name="salary" placeholder="Salary" required/>
+      <input type="text" name="address" placeholder="Address" required/>
+      <input type="date" name="dob" placeholder="Date of Birth" class="dob" required/>
+      <input type="submit" class="submit" value="Submit">
+    </form>
+  </div>
+</div>
+
+
+
+  </body>
+</html>
